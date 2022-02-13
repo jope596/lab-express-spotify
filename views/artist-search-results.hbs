@@ -1,13 +1,16 @@
-<div>
+<link rel="stylesheet" href="/styles/styleArtists.css">
+
+<div class="artists">
   {{#each artist}}
-    <div>
+    <div class="artist-div">
       <img src="{{this.images.1.url}}" alt="{{this.name}}" />
-    </div>
+    
     <p>
       {{this.name}}
+     <a href="/albums/{{this.id}}">View Albums</a> 
     </p>
-
-    <a href="/albums/{{this.id}}">View Albums</a>
+</div>
+    
   
   {{/each}}
 </div>
